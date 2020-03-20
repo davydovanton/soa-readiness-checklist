@@ -30,6 +30,8 @@ Check your system for SOA readiness before start migration.
       * partition convention
       * consumer group
       * log compatction
+    * if rebbitmq
+    * if google pub/sub
 
 * AuthN/AuthZ
 
