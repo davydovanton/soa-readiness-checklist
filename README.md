@@ -23,7 +23,7 @@ Check your system for SOA readiness before start migration.
 * Events
   * event serealisation
     * TODO: take more examples from link - https://reasonablypolymorphic.com/blog/protos-are-wrong/index.html
-    * humar readable 
+    * humar readable
       * xml
       * json
     * binary
@@ -87,7 +87,7 @@ Check your system for SOA readiness before start migration.
       * event bus
 
   * Data synchronization
-    * How to get data which needful for business logic? 
+    * How to get data which needful for business logic?
       * sync way
         * Backend to backend communications
       * async way
