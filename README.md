@@ -4,25 +4,60 @@ Check your system for SOA readiness before start migration.
 
 * communications
   * frontend - backend
+    * Types
+      * json API
+      * REST json
+      * GraphQL
+    * Guidelines for developers
+
   * backend - backend
+    * Types
+      * json API
+      * REST json
+      * GraphQL
+      * AvroRPC
+      * gRPC
+      * Thrift RPC
+    * Guidelines for developers
 
 * Events
   * event serealisation
     * TODO: take more examples from link - https://reasonablypolymorphic.com/blog/protos-are-wrong/index.html
+    * humar readable 
+      * xml
+      * json
     * binary
       * avro
       * protobuf
       * trift
-    * humar readable 
-      * xml
-      * json
+    * Links
+      * http://dataintensive.net
+
   * event types
+    * Business event
+      * High-level, intention-revealing business events
+
+    * Data-change event
+      * Low-level, technical event for describing changes
+
+    * Links
+      * "Format & Semantics" section from https://medium.com/@sderosiaux/cqrs-what-why-how-945543482313
+
   * Event ordering
+    * by event bus
+    * by service logic
+
   * Compatibility level and event versions
+    * backward and forward compatibility
+    * Different versions for event data and event schema
+    * Links
+      * http://dataintensive.net
+
   * how to store event schemas
     * in source code
     * in separate library
     * in schema registry
+
   * event bus
     * if kafka
       * how to create a new topic locally, in production, in staging and in test env
@@ -39,14 +74,26 @@ Check your system for SOA readiness before start migration.
   * How to make API composition
     * REST
       * API gateway
+        * self written
+        * open source
     * GraphQL
       * manual stitching
       * GQL gateway
+
   * How to make data composition
     * Sync
       * backend to backend communications
     * Async
       * event bus
+
+  * Data synchronization
+    * How to get data which needful for business logic? 
+      * sync way
+        * Backend to backend communications
+      * async way
+        * event bus
+        * CQRS
+        * data streaming
 
 * DevOps
   * Developers know how to provision a new service by self
@@ -61,6 +108,35 @@ Check your system for SOA readiness before start migration.
   * System has e2e testing infrastructure
 
 * Observability
+  * Logs
+    * Developers know how to store logs
+    * everyone know how and where to read logs
+  * Monitoring
+    * Business metrics
+    * ARP metrics
+    * System metrics
+    * Tracing
+
+* Inventory aka list of all services in the system
+  * We need a place where we can see all our services and dependencies between them
+
+* local development
+  * developers can get same env as a production env
+
+* ETL and analytics
+
+* Documentation
+  * Do you have a process around Architecture Decision Records?
+  * Do you have domain documentation which can be useful for developers and other ppl from the team?
+  * Do you have a documentation for the each service?
+    * API
+    * architecture of the service
+    * how to install service locally
+  * List of allowed technologies/practices
+  * Checks
+    * deployment checklist
+    * moving to production checklist
+
 
 ## Links
 
