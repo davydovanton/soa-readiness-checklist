@@ -2,6 +2,12 @@
 
 Check your system for SOA readiness before start migration.
 
+## Checklist
+
+SOON
+
+## Raw topics
+
 * communications
   * frontend - backend
     * Types
