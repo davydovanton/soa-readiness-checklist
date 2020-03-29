@@ -6,6 +6,7 @@ Check your system for SOA readiness before start migration.
 
 SOON
 
+
 ## Raw topics
 
 * communications
@@ -72,7 +73,9 @@ SOON
       * consumer group
       * log compatction
     * if rebbitmq
+      * how to create a queue
     * if google pub/sub
+      * how to create a queue
 
 * AuthN/AuthZ
 
